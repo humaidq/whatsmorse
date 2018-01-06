@@ -1,0 +1,6 @@
+{
+  "name": "WhatsMorse Chat Site",
+  "description": "Motse Chat site",
+  "image": "heroku/go:1.8.1",
+  "mount_dir": "src/github.com/hmksq/whats-morse",
+}

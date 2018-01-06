@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>WhatsMorse!</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha256-m/h/cUDAhf6/iBRixTbuc8+Rg2cIETQtPcH9D3p2Kg0=" crossorigin="anonymous" />
+      <style type="text/css">
+         @import url('https://fonts.googleapis.com/css?family=Amiri|Work+Sans');
+         body {
+         padding-top: 20px;
+         padding-bottom: 20px;
+         font-family: 'Work Sans', sans-serif;
+         }
+         .navbar {
+         margin-bottom: 15px;
+         border-radius: 0.3rem;
+         }
+         p.footer {
+         text-align: center;
+         }
+         .marg{
+         margin-bottom: 5px
+         }
+         .c {
+         text-align: center;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+      </style>
+
+   </head>
+   <body>
+      <div class="container">
+      <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+         <a class="navbar-brand" href="/">WhatsMorse</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb" aria-controls="nb" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+      </nav>
+      <div class="jumbotron">
+      <div class="col-sm-8 mx-auto">
+      <h1 class="display-4 c dsize">WhatsMorse</h1>
+      <p class="c lead">Telegraph Line ID: <span class="badge badge-primary">{{.Code}}</span></p>
+      <div class="c">
+        <div class="card border-primary mb-3">
+          <div class="card-header">Transmittor</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">Sender</h5>
+
+  <div class="form-group">
+    <label>To Telegraph Line ID</label>
+    <input class="form-control" id="lineid" placeholder="Enter Line ID">
+  </div>
+  <div class="form-group">
+    <label>Message</label>
+    <input class="form-control" id="message">
+  </div>
+
+  <button id="Send" class="btn btn-info btn-block">Send it</button>
+<small>If the Line ID is invalid, the telegraph will not reach the recipient.</small>
+          </div>
+        </div>
+
+
+
+
+  <div class="card border-warning mb-3">
+    <div class="card-header">Incoming Transmittions   <button id="Clear" class="btn btn-danger btn-sm">clear</button></div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Receiver</h5>
+      <ul class="list-group">
+        <div id="incoming">
+
+
+        </div>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+      </div>
+
+      </div>
+      </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha256-UpLmd/5xLICGNBTp5z82eNhtQJ91E5K2gDtwqUn8EBc=" crossorigin="anonymous" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha256-DiWJXXyq81WlPRnDfGmgYZj2aOVCKyEdJ1l+2TmDuAs=" crossorigin="anonymous" type="text/javascript"></script>
+      <script>
+      $(document).ready(function(){
+  $('#Send').click(function(){
+      $.get("/transmit?to=" + $('#lineid').val() + "&message=" + $('#message').val());
+      $('#message').val("");
+  });
+  $('#Clear').click(function(){
+      $.get("/clear");
+  });
+});
+      (function(){
+           $("#incoming").load("/incoming");
+          setTimeout(arguments.callee, 800);
+      })();
+      $('#message').keydown(function(event){
+    var keyCode = (event.keyCode ? event.keyCode : event.which);
+    if (keyCode == 13) {
+        $('#Send').trigger('click');
+    }
+});
+      </script>
+   </body>
+</html>
