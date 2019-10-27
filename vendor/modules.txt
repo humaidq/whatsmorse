@@ -1,0 +1,12 @@
+# github.com/Unknwon/com v0.0.0-20170819223952-7677a1d7c113
+github.com/Unknwon/com
+# github.com/go-macaron/inject v0.0.0-20160627170012-d8a0b8677191
+github.com/go-macaron/inject
+# github.com/go-macaron/session v0.0.0-20170320172209-b8e286a0dba8
+github.com/go-macaron/session
+# golang.org/x/crypto v0.0.0-20171231215028-0fcca4842a8d
+golang.org/x/crypto/pbkdf2
+# gopkg.in/ini.v1 v1.32.0
+gopkg.in/ini.v1
+# gopkg.in/macaron.v1 v1.2.4
+gopkg.in/macaron.v1

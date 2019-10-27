@@ -1,0 +1,14 @@
+github.com/Unknwon/com v0.0.0-20170819223952-7677a1d7c113 h1:YwXm6KwmrA5R5yJRhcnpqRUHmBXSKciHuWtK9zP5qKQ=
+github.com/Unknwon/com v0.0.0-20170819223952-7677a1d7c113/go.mod h1:KYCjqMOeHpNuTOiFQU6WEcTG7poCJrUs0YgyHNtn1no=
+github.com/go-macaron/inject v0.0.0-20160627170012-d8a0b8677191 h1:NjHlg70DuOkcAMqgt0+XA+NHwtu66MkTVVgR4fFWbcI=
+github.com/go-macaron/inject v0.0.0-20160627170012-d8a0b8677191/go.mod h1:VFI2o2q9kYsC4o7VP1HrEVosiZZTd+MVT3YZx4gqvJw=
+github.com/go-macaron/session v0.0.0-20170320172209-b8e286a0dba8 h1:YIbILaZ2IycFbMhPG35oBews3Tt5HWNTW7xhEEXvEtE=
+github.com/go-macaron/session v0.0.0-20170320172209-b8e286a0dba8/go.mod h1:ScEJm9Gk+ez5JJTml5WlBIqavAfuE5nF8e4Gvyz/X+A=
+github.com/hellworld-io/morseGo v0.0.0-20170411043521-ef46ece6471a/go.mod h1:/wX/WwQOWBs7SkntN+K7/vFZy2b8q68iwdPZq0363Zw=
+github.com/pravj/morser v0.0.0-20150915083409-ad33f5cefb7e/go.mod h1:eNlJrwRGY/Iogv5PVryuMCsvNK5iaqu8ApyeLP4wwvs=
+golang.org/x/crypto v0.0.0-20171231215028-0fcca4842a8d h1:GrqEEc3+MtHKTsZrdIGVoYDgLpbSRzW1EF+nLu0PcHE=
+golang.org/x/crypto v0.0.0-20171231215028-0fcca4842a8d/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
+gopkg.in/ini.v1 v1.32.0 h1:9yR997mcSrhXxgxItwowxJCmCTrSSlnSN8FEbuXHFP0=
+gopkg.in/ini.v1 v1.32.0/go.mod h1:pNLf8WUiyNEtQjuu5G5vTm06TEv9tsIgeAvK8hOrP4k=
+gopkg.in/macaron.v1 v1.2.4 h1:hBOy4AsYKd4lC59YjpDl7MGXEss+JYhH8aF/fXf/Cc4=
+gopkg.in/macaron.v1 v1.2.4/go.mod h1:PrsiawTWAGZs6wFbT5hlr7SQ2Ns9h7cUVtcUu4lQOVo=
