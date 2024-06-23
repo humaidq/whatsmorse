@@ -1,0 +1,14 @@
+{
+    "name": "Whatsmorse Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/go",
+    "customizations": {
+        "vscode": {
+            "extensions": ["golang.Go"]
+        }
+    },
+    "forwardPorts": [8080],
+    "portsAttributes": {
+        "8080": {"label": "Whatsmorse"}
+    },
+    "containerEnv": { "PORT": "8080" }
+}
