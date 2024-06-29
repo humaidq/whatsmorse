@@ -1,4 +1,4 @@
-module git.sr.ht/~humaid/whatsmorse
+module github.com/humaidq/whatsmorse
 
 go 1.13
 

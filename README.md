@@ -1,36 +1,60 @@
-# WhatsMorse
+<div align="center">
+    <h1>WhatsMorse</h1>
+    <p>A morse-code instant messenger</p>
+</div>
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/humaidq/whatsmorse)
 
-## 1. Description
-![Screenshot of WhatsMorse page](https://humaidq.ae/projects/screenshots/WhatsMorse.gif)
+## Description
 
-WhatsMorse is a web messaging application which translates all your messages to morse code written in a two hour ["Stupid" Hackathon by Transcend](https://www.meetup.com/transcenddubai/events/245505285/) in January of 2018.
-The goal of the hackathon was to create something useless (can be anything, not limited to computer software).  
+![Screenshot of WhatsMorse page](./WhatsMorse.webp)
 
-The web app can be accessed from the URL of the project above.
+WhatsMorse is a web messaging application which translates all your messages to
+morse code written in a two hour ["Stupid" Hackathon by
+Transcend](https://www.meetup.com/transcenddubai/events/245505285/) in January
+of 2018.
 
-## 2. Requirements
+The goal of the hackathon was to create something useless (can be anything, not
+limited to computer software).
 
-The following packages must be installed on your system.
+## Usage
 
-- Go
-- Git
+This project includes a [Nix] development shell, which pulls in the required
+version of Go. It also includes the application as a Nix package.
 
-## 3. Copying and contributing
+### With Nix (recommended)
 
-This program is written by Humaid AlQassimi, and is distributed
-under the [MIT](https://humaidq.ae/license/mit) license.  
+To run the application:
 
-## 4. Download and install
-
-```sh
-$ go get -u git.sr.ht/~humaid/whatsmorse
-$ go install git.sr.ht/~humaid/whatsmorse
+```
+PORT=8080 nix run
 ```
 
-## 5. Usage
-To run the web app, `$PORT` must be set in the enviornment.
-```sh
-$ export PORT=8080
-$ whatsmorse
+To load a development shell:
+
 ```
-The web app will be accessible at `http://localhost:8080`.
+nix develop
+```
+
+The development shell would automatically be loaded if you have [nix-direnv]
+configured on your machine.
+
+### With Dev Containers
+
+You may use dev containers with this project. You can use it on your local
+editor, or open this project in GitHub Codespaces. Please note that GitHub may
+bill you for using this feature.
+
+### Using Go
+
+Make sure you have Go installed on your system.
+
+To build & run the application:
+
+```
+go build
+PORT=8080 ./whatsmorse
+```
+
+[Nix]: https://zero-to-nix.com/start/install)
+[nix-direnv]: https://github.com/nix-community/nix-direnv
