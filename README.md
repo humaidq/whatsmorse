@@ -2,8 +2,10 @@
     <h1>WhatsMorse</h1>
     <p>A morse-code instant messenger</p>
 </div>
+
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/humaidq/whatsmorse)
+[![Go Report Card](https://goreportcard.com/badge/github.com/humaidq/whatsmorse)](https://goreportcard.com/report/github.com/humaidq/whatsmorse)
 
 ## Description
 
