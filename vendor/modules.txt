@@ -6,7 +6,7 @@ github.com/go-macaron/inject
 github.com/go-macaron/session
 # github.com/unknwon/com v0.0.0-20190804042917-757f69c95f3e
 github.com/unknwon/com
-# golang.org/x/crypto v0.17.0
+# golang.org/x/crypto v0.31.0
 golang.org/x/crypto/pbkdf2
 # gopkg.in/ini.v1 v1.62.0
 gopkg.in/ini.v1
